@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Arkavia Studio — Brand Profesional</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap">
+<style>
+:root{--bg:#EEF2F7;--sf:#fff;--ink:#0B1B33;--mu:#51617A;--ac:#2F5BFF;--ac2:#FFB020;--ln:#D5DDE9;--on:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#08111F;--sf:#0F1D33;--ink:#EAF0FA;--mu:#9AA9C2;--ac:#6F8CFF;--ac2:#FFB020;--ln:#22324D;--on:#08111F;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#08111F;--sf:#0F1D33;--ink:#EAF0FA;--mu:#9AA9C2;--ac:#6F8CFF;--ac2:#FFB020;--ln:#22324D;--on:#08111F;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 Sora,system-ui,-apple-system,"Segoe UI",sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:60}
+.ic{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--ac2);outline-offset:2px}
+.w{max-width:1120px;margin:0 auto;padding:0 20px}
+h1,h2,h3{line-height:1.15;margin:0}
+h1{font-size:clamp(34px,6.4vw,64px);font-weight:800;letter-spacing:-.03em}
+h2{font-size:clamp(26px,4vw,40px);font-weight:800;letter-spacing:-.02em}
+h3{font-size:18px;font-weight:600}
+p{margin:0;color:var(--mu)}
+section{padding:72px 0}
+.sh{max-width:560px;margin-bottom:36px}.sh p{margin-top:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:10px;border:1.5px solid var(--ink);font:600 15px Sora,sans-serif;cursor:pointer;background:transparent;color:var(--ink);transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.p{background:var(--ac);border-color:var(--ac);color:#fff}
+.ib{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:10px;border:1.5px solid var(--ln);background:var(--sf);color:var(--ink);cursor:pointer}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--ln)}
+.nv{display:flex;align-items:center;justify-content:space-between;height:68px;gap:12px}
+.lg{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px}
+.lg i{width:34px;height:34px;border-radius:9px;background:var(--ac);color:#fff;display:grid;place-items:center}
+.lk{display:flex;gap:22px;font-size:14px;font-weight:600;color:var(--mu)}
+.lk a:hover{color:var(--ink)}
+.ac{display:flex;gap:8px;align-items:center}
+#mb{display:none}
+@media(max-width:820px){.lk{display:none;position:absolute;top:68px;left:0;right:0;flex-direction:column;background:var(--bg);padding:16px 20px;border-bottom:1px solid var(--ln);gap:14px}.lk.o{display:flex}#mb{display:inline-grid}.nv .btn{display:none}}
+.hero{padding:56px 0 40px}
+.hg{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+@media(max-width:820px){.hg{grid-template-columns:1fr}}
+.hero p.l{font-size:18px;margin:18px 0 26px;max-width:480px}
+.bd{display:flex;align-items:center;gap:8px;width:max-content;max-width:100%;padding:6px 12px;border:1px solid var(--ln);border-radius:99px;background:var(--sf);font-size:13px;font-weight:600;margin-bottom:18px}
+.bd .ic{width:16px;height:16px;color:var(--ac)}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.kit{background:var(--sf);border:1.5px solid var(--ink);border-radius:18px;padding:22px;box-shadow:8px 8px 0 var(--ac);animation:rise .7s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}}
+.kit h3{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.sw{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:16px}
+.sw span{height:56px;border-radius:10px;border:1px solid var(--ln)}
+.tp{border-top:1px solid var(--ln);padding-top:14px;display:flex;justify-content:space-between;align-items:end}
+.tp b{font-size:44px;line-height:1;font-weight:800}
+.tp small{color:var(--mu);font-size:12px}
+.lgs{display:flex;gap:10px;margin-top:14px}
+.lgs i{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;border:1px solid var(--ln)}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:820px){.g3{grid-template-columns:1fr}}
+@media(min-width:560px) and (max-width:820px){.g3{grid-template-columns:1fr 1fr}}
+.cd{background:var(--sf);border:1px solid var(--ln);border-radius:14px;padding:24px}
+.cd .ic{width:28px;height:28px;color:var(--ac);margin-bottom:14px}
+.cd p{margin-top:8px;font-size:15px}
+.st{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:36px 0;border-block:1px solid var(--ln)}
+@media(max-width:700px){.st{grid-template-columns:1fr 1fr}}
+.st b{display:block;font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.03em}
+.st span{color:var(--mu);font-size:14px}
+.ch{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.ch button{padding:8px 16px;border-radius:99px;border:1.5px solid var(--ln);background:var(--sf);color:var(--ink);font:600 14px Sora,sans-serif;cursor:pointer}
+.ch button[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.pt{border-radius:14px;overflow:hidden;border:1px solid var(--ln);background:var(--sf)}
+.pt div{height:150px;display:grid;place-items:center;color:#fff}
+.pt .ic{width:44px;height:44px}
+.pt h3{padding:14px 16px 2px}.pt p{padding:0 16px 16px;font-size:14px}
+.pr{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:s}
+@media(max-width:820px){.pr{grid-template-columns:1fr 1fr}}
+.pr .cd::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--ac2);color:#0B1B33;font-weight:800;margin-bottom:14px}
+.tg{display:flex;align-items:center;gap:12px;margin-bottom:26px;font-weight:600;font-size:14px}
+.sl{width:54px;height:30px;border-radius:99px;border:1.5px solid var(--ink);background:var(--sf);position:relative;cursor:pointer;padding:0}
+.sl::after{content:"";position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:var(--ac);transition:transform .2s}
+.sl[aria-checked=true]::after{transform:translateX(24px)}
+.pl.f{border:2px solid var(--ac);box-shadow:6px 6px 0 var(--ac)}
+.pl .pc{font-size:34px;font-weight:800;margin:10px 0}.pl .pc small{font-size:14px;color:var(--mu);font-weight:400}
+.pl ul{list-style:none;padding:0;margin:0 0 20px;display:grid;gap:10px;font-size:15px}
+.pl li{display:flex;gap:10px;align-items:center}.pl li .ic{width:18px;height:18px;margin:0;color:var(--ac)}
+.pl .btn{width:100%;justify-content:center}
+.q{border:1px solid var(--ln);border-radius:12px;background:var(--sf);margin-bottom:10px}
+.q button{all:unset;box-sizing:border-box;width:100%;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 18px;font:600 16px Sora,sans-serif;cursor:pointer}
+.q button:focus-visible{outline:3px solid var(--ac2)}
+.q .ic{transition:transform .2s}.q.o .ic{transform:rotate(180deg)}
+.q div{display:none;padding:0 18px 16px;color:var(--mu);font-size:15px}.q.o div{display:block}
+.ct{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+@media(max-width:820px){.ct{grid-template-columns:1fr}}
+.ci{display:grid;gap:16px;margin-top:22px}.ci div{display:flex;gap:12px;align-items:center;color:var(--mu)}.ci .ic{color:var(--ac)}
+form{display:grid;gap:14px;background:var(--sf);border:1px solid var(--ln);border-radius:14px;padding:22px}
+label{display:grid;gap:6px;font-size:14px;font-weight:600}
+input,select,textarea{font:400 15px Sora,sans-serif;padding:11px 12px;border-radius:9px;border:1.5px solid var(--ln);background:var(--bg);color:var(--ink);width:100%}
+input[aria-invalid=true],textarea[aria-invalid=true]{border-color:#E5484D}
+.er{color:#E5484D;font-size:12px;font-weight:400;min-height:0}
+footer{border-top:1px solid var(--ln);padding:28px 0;color:var(--mu);font-size:14px}
+footer .w{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;align-items:center}
+.fb{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));display:grid;gap:10px;z-index:40}
+.fb a,.fb button{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;border:0;cursor:pointer;color:#fff;background:#18A058;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.fb button{background:var(--ink);color:var(--bg);display:none}
+#ts{position:fixed;left:50%;bottom:90px;transform:translate(-50%,20px);background:var(--ink);color:var(--bg);padding:12px 18px;border-radius:10px;font-size:14px;opacity:0;pointer-events:none;transition:.25s;z-index:70;display:flex;gap:8px;align-items:center}
+#ts.s{opacity:1;transform:translate(-50%,0)}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-logo" viewBox="0 0 24 24"><path d="M4 20L12 4l8 16M8 14h8"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></symbol>
+<symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V4M4 20h16M8 16v-5M13 16V8M18 16v-8"/></symbol>
+<symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5zM3 13l9 5 9-5"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.5 3-6 6.5-6s6.5 2.5 6.5 6"/><circle cx="17" cy="9" r="2.5"/><path d="M17 14c2.5 0 4.5 1.8 4.5 4.5"/></symbol>
+<symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></symbol>
+<symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
+<symbol id="i-code" viewBox="0 0 24 24"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></symbol>
+<symbol id="i-pen" viewBox="0 0 24 24"><path d="M4 20l4-1 11-11-3-3L5 16z"/></symbol>
+<symbol id="i-box" viewBox="0 0 24 24"><path d="M12 3l8 4v10l-8 4-8-4V7zM4 7l8 4 8-4M12 11v10"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+<symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5"/></symbol>
+<symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 14l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6 7-12a7 7 0 0 0-14 0c0 6 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></symbol>
+<symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3l2.7 5.8 6.3.7-4.7 4.3 1.3 6.2-5.6-3.2-5.6 3.2 1.3-6.2L3 9.5l6.3-.7z"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="i-down" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+<symbol id="i-up" viewBox="0 0 24 24"><path d="M6 15l6-6 6 6"/></symbol>
+<symbol id="i-send" viewBox="0 0 24 24"><path d="M21 3L10 14M21 3l-7 18-4-7-7-4z"/></symbol>
+</defs></svg>
+
+<header><div class="w nv">
+<a class="lg" href="#top"><i><svg class="ic"><use href="#i-logo"/></svg></i>Arkavia</a>
+<nav class="lk" id="lk" aria-label="Menu utama"><a href="#layanan">Layanan</a><a href="#karya">Karya</a><a href="#proses">Proses</a><a href="#harga">Harga</a><a href="#faq">FAQ</a><a href="#kontak">Kontak</a></nav>
+<div class="ac"><button class="ib" id="th" aria-label="Ganti tema"><svg class="ic"><use href="#i-moon"/></svg></button><a class="btn p" href="#kontak">Konsultasi<svg class="ic" style="width:18px;height:18px"><use href="#i-arrow"/></svg></a><button class="ib" id="mb" aria-label="Buka menu" aria-expanded="false"><svg class="ic"><use href="#i-menu"/></svg></button></div>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="w hg">
+<div>
+<div class="bd"><svg class="ic"><use href="#i-shield"/></svg>Dipercaya 240+ bisnis</div>
+<h1>Brand yang dipercaya sejak kesan pertama.</h1>
+<p class="l">Kami membangun identitas, website, dan sistem visual agar bisnis Anda terlihat profesional di setiap titik temu dengan pelanggan.</p>
+<div class="cta"><a class="btn p" href="#kontak"><svg class="ic" style="width:18px;height:18px"><use href="#i-chat"/></svg>Mulai konsultasi gratis</a><a class="btn" href="#karya"><svg class="ic" style="width:18px;height:18px"><use href="#i-layers"/></svg>Lihat karya</a></div>
+</div>
+<aside class="kit" aria-label="Contoh brand kit">
+<h3>Brand kit<svg class="ic"><use href="#i-pen"/></svg></h3>
+<div class="sw"><span style="background:#2F5BFF"></span><span style="background:#0B1B33"></span><span style="background:#FFB020"></span><span style="background:#EEF2F7"></span></div>
+<div class="tp"><b>Aa</b><small>Sora · 400 / 600 / 800</small></div>
+<div class="lgs"><i style="background:#2F5BFF;color:#fff"><svg class="ic"><use href="#i-logo"/></svg></i><i style="background:#0B1B33;color:#FFB020"><svg class="ic"><use href="#i-logo"/></svg></i><i style="background:#FFB020;color:#0B1B33"><svg class="ic"><use href="#i-logo"/></svg></i><i style="color:var(--ink)"><svg class="ic"><use href="#i-logo"/></svg></i></div>
+</aside>
+</div></section>
+
+<div class="w"><div class="st" id="st"></div></div>
+
+<section id="layanan"><div class="w">
+<div class="sh"><h2>Layanan untuk brand yang serius tumbuh</h2><p>Satu tim, satu standar kualitas, dari logo sampai kampanye.</p></div>
+<div class="g3" id="sv"></div>
+</div></section>
+
+<section id="karya" style="padding-top:24px"><div class="w">
+<div class="sh"><h2>Karya terpilih</h2><p>Filter berdasarkan jenis proyek.</p></div>
+<div class="ch" id="ch" role="group" aria-label="Filter karya"></div>
+<div class="g3" id="pf"></div>
+</div></section>
+
+<section id="proses"><div class="w">
+<div class="sh"><h2>Cara kami bekerja</h2><p>Empat tahap yang jelas, tanpa kejutan di tengah jalan.</p></div>
+<div class="pr">
+<div class="cd"><h3>Temu &amp; riset</h3><p>Memahami bisnis, pasar, dan pesaing Anda.</p></div>
+<div class="cd"><h3>Strategi brand</h3><p>Menentukan posisi, suara, dan nilai utama.</p></div>
+<div class="cd"><h3>Desain &amp; revisi</h3><p>Visual dibuat, diuji, dan disempurnakan bersam.</p></div>
+<div class="cd"><h3>Peluncuran</h3><p>Aset siap pakai dan panduan penggunaan lengkap.</p></div>
+</div></div></section>
+
+<section id="harga"><div class="w">
+<div class="sh"><h2>Paket yang jelas</h2><p>Harga transparan. Pilih sesuai tahap bisnis Anda.</p></div>
+<div class="tg"><span>Sekali bayar</span><button class="sl" id="sl" role="switch" aria-checked="false" aria-label="Pilih langganan bulanan"></button><span>Langganan bulanan</span></div>
+<div class="g3" id="pl"></div>
+</div></section>
+
+<section><div class="w">
+<div class="sh"><h2>Kata klien</h2></div>
+<div class="g3" id="tm"></div>
+</div></section>
+
+<section id="faq"><div class="w" style="max-width:760px">
+<div class="sh"><h2>Pertanyaan umum</h2></div>
+<div id="fq"></div>
+</div></section>
+
+<section id="kontak"><div class="w ct">
+<div><h2>Ceritakan kebutuhan brand Anda</h2><p style="margin-top:10px">Kami balas dalam 1 hari kerja dengan rencana awal dan estimasi biaya.</p>
+<div class="ci"><div><svg class="ic"><use href="#i-mail"/></svg>halo@arkavia.id</div><div><svg class="ic"><use href="#i-phone"/></svg>+62 812 0000 0000</div><div><svg class="ic"><use href="#i-pin"/></svg>Jakarta, Indonesia</div></div></div>
+<form id="fm" novalidate>
+<label>Nama<input id="n" autocomplete="name"><span class="er" id="en"></span></label>
+<label>Email<input id="e" type="email" autocomplete="email"><span class="er" id="ee"></span></label>
+<label>Layanan<select id="s"><option>Identitas brand</option><option>Website</option><option>Kemasan</option><option>Konten &amp; kampanye</option></select></label>
+<label>Pesan<textarea id="m" rows="4"></textarea><span class="er" id="em"></span></label>
+<button class="btn p" type="submit" style="justify-content:center"><svg class="ic" style="width:18px;height:18px"><use href="#i-send"/></svg>Kirim pesan</button>
+</form></div></section>
+</main>
+
+<footer><div class="w"><span>© 2026 Arkavia Studio. Semua hak dilindungi.</span><span style="display:flex;gap:6px;align-items:center"><svg class="ic" style="width:16px;height:16px"><use href="#i-shield"/></svg>Data Anda aman bersama kami</span></div></footer>
+
+<div class="fb"><button id="up" aria-label="Kembali ke atas"><svg class="ic"><use href="#i-up"/></svg></button><a href="https://wa.me/6281200000000" target="_blank" rel="noopener" aria-label="Chat WhatsApp"><svg class="ic"><use href="#i-chat"/></svg></a></div>
+<div id="ts" role="status"><svg class="ic"><use href="#i-check"/></svg><span></span></div>
+
+<script>
+const $=s=>document.querySelector(s),I=n=>`<svg class="ic"><use href="#i-${n}"/></svg>`;
+// Tema
+const R=document.documentElement;let dk=matchMedia('(prefers-color-scheme:dark)').matches;
+try{const t=localStorage.getItem('th');if(t)dk=t==='dark'}catch(e){}
+function setT(){R.dataset.theme=dk?'dark':'light';$('#th').innerHTML=I(dk?'sun':'moon');try{localStorage.setItem('th',dk?'dark':'light')}catch(e){}}
+$('#th').onclick=()=>{dk=!dk;setT()};setT();
+// Menu mobile
+$('#mb').onclick=()=>{const o=$('#lk').classList.toggle('o');$('#mb').setAttribute('aria-expanded',o);$('#mb').innerHTML=I(o?'x':'menu')};
+$('#lk').onclick=e=>{if(e.target.tagName==='A'){$('#lk').classList.remove('o');$('#mb').innerHTML=I('menu')}};
+// Statistik (counter)
+const ST=[[240,'+','Klien dilayani'],[12,'','Tahun pengalaman'],[98,'%','Klien puas'],[35,'','Penghargaan desain']];
+$('#st').innerHTML=ST.map(s=>`<div><b data-n="${s[0]}" data-x="${s[1]}">0${s[1]}</b><span>${s[2]}</span></div>`).join('');
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;io.unobserve(e.target);const b=e.target,n=+b.dataset.n,t0=performance.now();(function f(t){const p=Math.min(1,(t-t0)/1200);b.textContent=Math.round(n*p)+b.dataset.x;if(p<1)requestAnimationFrame(f)})(t0)}));
+document.querySelectorAll('[data-n]').forEach(b=>io.observe(b));
+// Layanan
+const SV=[['target','Strategi brand','Posisi, pesan, dan suara brand yang konsisten.'],['pen','Identitas visual','Logo, warna, tipografi, dan panduan brand.'],['code','Website &amp; aplikasi','Situs cepat, responsif, dan mudah dikelola.'],['box','Desain kemasan','Kemasan yang menonjol di rak dan di foto produk.'],['chart','Konten &amp; kampanye','Materi pemasaran yang terukur hasilnya.'],['shield','Perlindungan brand','Panduan penggunaan agar brand tetap rapi.']];
+$('#sv').innerHTML=SV.map(s=>`<div class="cd">${I(s[0])}<h3>${s[1]}</h3><p>${s[2]}</p></div>`).join('');
+// Portofolio + filter
+const PF=[['Identitas','Kopi Nusa','Rebranding kedai kopi lokal','layers','#2F5BFF,#0B1B33'],['Digital','Finlo','Website fintech untuk UMKM','code','#0E8F6E,#0B1B33'],['Kemasan','Rasa Kita','Seri kemasan makanan ringan','box','#FFB020,#D9480F'],['Identitas','Bayu Logistik','Identitas visual perusahaan logistik','target','#6F42C1,#2F5BFF'],['Digital','Sehati Klinik','Portal pasien dan jadwal online','globe','#0B7285,#0B1B33'],['Kemasan','Aroma Teh','Kemasan teh premium','star','#C2255C,#5F3DC4']];
+let ft='Semua';const CT=['Semua','Identitas','Digital','Kemasan'];
+function rp(){$('#ch').innerHTML=CT.map(c=>`<button aria-pressed="${c===ft}" data-c="${c}">${c}</button>`).join('');
+$('#pf').innerHTML=PF.filter(p=>ft==='Semua'||p[0]===ft).map(p=>`<article class="pt"><div style="background:linear-gradient(135deg,${p[4].split(',')[0]},${p[4].split(',')[1]})">${I(p[3])}</div><h3>${p[1]}</h3><p>${p[2]}</p></article>`).join('')}
+$('#ch').onclick=e=>{if(e.target.dataset.c){ft=e.target.dataset.c;rp()}};rp();
+// Harga
+let mo=false;const PL=[['Starter',2.5,.35,['Logo &amp; palet warna','Panduan brand ringkas','2 kali revisi']],['Profesional',7.5,.9,['Identitas visual lengkap','Website company profile','Panduan brand penuh','5 kali revisi'],1],['Enterprise',18,2.1,['Strategi brand menyeluruh','Website &amp; kampanye','Tim khusus','Revisi tanpa batas']]];
+function rl(){$('#pl').innerHTML=PL.map(p=>`<div class="cd pl${p[4]?' f':''}"><h3>${p[0]}</h3><div class="pc">Rp ${String(mo?p[2]:p[1]).replace('.',',')} jt<small>${mo?' /bulan':''}</small></div><ul>${p[3].map(x=>`<li>${I('check')}${x}</li>`).join('')}</ul><a class="btn${p[4]?' p':''}" href="#kontak">Pilih paket</a></div>`).join('')}
+$('#sl').onclick=()=>{mo=!mo;$('#sl').setAttribute('aria-checked',mo);rl()};rl();
+// Testimoni
+const TM=[['Rina Wijaya','Pemilik Kopi Nusa','Penjualan naik setelah rebranding. Tim sangat responsif.'],['Dimas Pratama','CEO Finlo','Website baru membuat calon investor langsung percaya.'],['Sari Lestari','Founder Aroma Teh','Kemasannya dipuji pelanggan di setiap acara.']];
+$('#tm').innerHTML=TM.map(t=>`<div class="cd"><div style="display:flex;gap:2px;color:var(--ac2);margin-bottom:10px">${I('star').repeat(5)}</div><p style="color:var(--ink)">${t[2]}</p><p style="margin-top:14px;font-size:14px"><b style="color:var(--ink)">${t[0]}</b>, ${t[1]}</p></div>`).join('');
+// FAQ
+const FQ=[['Berapa lama pengerjaan?','Identitas brand 2 sampai 4 minggu. Website 4 sampai 8 minggu, tergantung cakupan.'],['Apakah file mentah diberikan?','Ya. Semua file sumber dan panduan penggunaan diserahkan saat proyek selesai.'],['Bagaimana sistem pembayaran?','50% di awal dan 50% saat serah terima. Paket bulanan ditagih tiap bulan.'],['Apakah ada garansi revisi?','Setiap paket mencakup jumlah revisi tertulis, dan Enterprise tanpa batas.']];
+$('#fq').innerHTML=FQ.map(f=>`<div class="q"><button aria-expanded="false">${f[0]}${I('down')}</button><div>${f[1]}</div></div>`).join('');
+$('#fq').onclick=e=>{const b=e.target.closest('button');if(!b)return;const q=b.parentNode,o=q.classList.toggle('o');b.setAttribute('aria-expanded',o)};
+// Toast
+function toast(t){const x=$('#ts');x.querySelector('span').textContent=t;x.classList.add('s');setTimeout(()=>x.classList.remove('s'),2800)}
+// Form
+$('#fm').onsubmit=e=>{e.preventDefault();let ok=true;
+const v=(id,er,t,c)=>{const el=$(id),bad=!c(el.value.trim());el.setAttribute('aria-invalid',bad);$(er).textContent=bad?t:'';if(bad)ok=false};
+v('#n','#en','Isi nama Anda.',x=>x.length>1);
+v('#e','#ee','Masukkan email yang valid.',x=>/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(x));
+v('#m','#em','Tulis pesan minimal 10 karakter.',x=>x.length>=10);
+if(ok){toast('Pesan terkirim. Kami balas dalam 1 hari kerja.');$('#fm').reset()}};
+// Ke atas
+const up=$('#up');up.onclick=()=>scrollTo({top:0,behavior:'smooth'});
+addEventListener('scroll',()=>{up.style.display=scrollY>600?'grid':'none'},{passive:true});
+</script>
+</body>
+</html>
